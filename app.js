@@ -2,9 +2,14 @@
 let name = prompt("please enter your name");
 let gender = "";
 let array = [];
-while (gender !== "male" && gender !== "female"){
+
+function mygender(x,y){
+while (gender !== x || gender !== y){
     gender = prompt("enter your gender");
 }
+}
+mygender("male","female")
+
 
 let drink = prompt("do you want cold or hot drink ");
 if (drink == "cold" || drink == "hot") { alert("ok") }
